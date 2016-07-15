@@ -13,6 +13,7 @@
 			@foreach($category->books as $book)
 				<li> <strong>{{$book->title}}</strong>
 				{{$book->descripcion}}
+				{{$book->status}}
 				</li>
 			@endforeach
 		</ul>
