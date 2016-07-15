@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    // return App\Book::all();
 
-    $books = App\Book::get();
-    return view('destroy',compact('books'));
+    $categories = App\Category::get();
+    return view('relacionship',compact('categories'));
 });
+
 Route::delete('destroy',function (Illuminate\Http\Request $request){
 	$ids = $request->get('ids');
 	if (count($ids)) {

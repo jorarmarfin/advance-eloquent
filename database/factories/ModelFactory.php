@@ -24,5 +24,7 @@ $factory->define(App\Book::class, function ($faker){
 	return [
 		'title' => $faker->sentence,
 		'descripcion' => $faker->text($maxNbChars = 200),
+        'category_id' => $faker->randomElement([1,2,3]),
 	];
 });
+
