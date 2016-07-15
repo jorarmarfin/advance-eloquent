@@ -10,10 +10,10 @@
 			({{$category->num_books}})
 		</p>
 		<ul>
-			@foreach($category->books as $book)
-				<li> <strong>{{$book->title}}</strong>
-				{{$book->descripcion}}
-				{{$book->status}}
+			@foreach($category->books_public as $book)
+				<li>
+					<strong>{{$book->title}}</strong>
+						<em>{{$book->status}}</em>
 				</li>
 			@endforeach
 		</ul>
