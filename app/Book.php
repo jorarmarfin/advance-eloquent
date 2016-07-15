@@ -8,7 +8,7 @@ class Book extends Model
 {
     use SoftDeletes;
 
-    public function Category(){
+    public function category(){
     	return $this->belongsTo(Category::class);
     }
 }

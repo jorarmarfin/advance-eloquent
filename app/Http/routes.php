@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
 
-    $categories = App\Category::get();
+    $categories = App\Category::has('books')->get();
     return view('relacionship',compact('categories'));
 });
 
